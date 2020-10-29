@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/etoilepolaire/static/css/main.6e82e701.chunk.css",
+    "main.js": "/etoilepolaire/static/js/main.4a7452ec.chunk.js",
+    "main.js.map": "/etoilepolaire/static/js/main.4a7452ec.chunk.js.map",
+    "runtime-main.js": "/etoilepolaire/static/js/runtime-main.284ab458.js",
+    "runtime-main.js.map": "/etoilepolaire/static/js/runtime-main.284ab458.js.map",
+    "static/js/2.b718e462.chunk.js": "/etoilepolaire/static/js/2.b718e462.chunk.js",
+    "static/js/2.b718e462.chunk.js.map": "/etoilepolaire/static/js/2.b718e462.chunk.js.map",
+    "static/js/3.2cd691b3.chunk.js": "/etoilepolaire/static/js/3.2cd691b3.chunk.js",
+    "static/js/3.2cd691b3.chunk.js.map": "/etoilepolaire/static/js/3.2cd691b3.chunk.js.map",
+    "index.html": "/etoilepolaire/index.html",
+    "static/css/main.6e82e701.chunk.css.map": "/etoilepolaire/static/css/main.6e82e701.chunk.css.map",
+    "static/js/2.b718e462.chunk.js.LICENSE.txt": "/etoilepolaire/static/js/2.b718e462.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.284ab458.js",
+    "static/js/2.b718e462.chunk.js",
+    "static/css/main.6e82e701.chunk.css",
+    "static/js/main.4a7452ec.chunk.js"
+  ]
+}
