@@ -1,0 +1,17 @@
+.main {
+  margin-top: 50px;
+}
+
+.profilePhoto {
+  padding: 20px;
+
+  border-top: 1px solid #000;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.userName {
+  font-size: 22px;
+  font-weight: 700;
+}

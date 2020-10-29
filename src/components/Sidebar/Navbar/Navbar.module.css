@@ -1,0 +1,40 @@
+.main {}
+
+.item {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 0;
+}
+
+.item:active {
+  border-left: 5px solid blue;
+  background-color: rgb(238, 238, 238);
+
+}
+
+.item:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+img {
+  padding: 5px 20px 0 25px;
+  width: 25px;
+  height: 25px;
+}
+
+.navlink {
+  width: 230px;
+  font-size: 20px;
+  color: #000;
+
+  text-decoration: none;
+}
+
+.active {
+  border-left: 10px solid blue
+}
+
+.activeText {
+  font-weight: 700;
+}
