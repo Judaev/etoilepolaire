@@ -8,7 +8,9 @@ function App() {
     <div className="appWrapper">
       <Sidebar />
       <Content />
-      <Feed />
+      <Feed /> 
+
+      
     </div>
   );
 }

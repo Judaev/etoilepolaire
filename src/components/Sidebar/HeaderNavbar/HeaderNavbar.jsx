@@ -1,12 +1,18 @@
 import React from 'react'
 import style from './HeaderNavbar.module.css'
+import Menu from './Menu/Menu'
+import Settings from './Settings/Settings'
 
 const HeaderNavbar = (props) => {
   return (
     <div className={style.main}>
-      <div className={style.item}>X</div>
-      <div className={style.item}>Étoile Polaire </div>
-      <div className={style.item}><img src="https://www.flaticon.com/svg/static/icons/svg/503/503822.svg" alt="" /></div>
+      <div className={style.item}>
+        <Menu />
+      </div>
+      <div className={style.text}>Étoile Polaire</div>
+      <div className={style.item}>
+        <Settings />
+      </div>
     </div>
   )
 }

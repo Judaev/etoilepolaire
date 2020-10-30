@@ -3,6 +3,7 @@
   grid-area: feed;
 
   height: 100px;
+  width: 30%;
 
-  background-color: blue;
+  background-color: #e7e7e7;
 }

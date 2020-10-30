@@ -1,8 +1,8 @@
 import React from 'react'
+import Favorites from './Favorites/Favorites'
 import HeaderNavbar from './HeaderNavbar/HeaderNavbar'
 import Navbar from './Navbar/Navbar'
 import Profile from './Profile/Profile'
-import Recommend from './Recommend/Recommend'
 import style from './Sidebar.module.css'
 
 const Sidebar = () => {
@@ -11,7 +11,7 @@ const Sidebar = () => {
       <HeaderNavbar />
       <Profile />
       <Navbar />
-      <Recommend />
+      <Favorites />
     </div>
   )
 }

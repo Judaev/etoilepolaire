@@ -1,0 +1,11 @@
+.item {
+  width: 25px;
+  display: flex;
+  margin-left: auto;
+}
+
+.icon {
+  display: flex;
+  width: 25px;
+  height: 25px;
+}

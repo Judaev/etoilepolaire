@@ -1,0 +1,45 @@
+.notificationItem {
+  display: flex;
+  align-items: center;
+
+  margin-left: 5px;
+}
+
+.notificationItem:hover {
+  background-color: #d8d8d8;
+  cursor: pointer;
+}
+
+.notificationItem:first-child {
+  margin-top: 10px;
+}
+
+.photo {
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.content {
+  margin: 5px 0 5px 20px;
+}
+
+.user {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.userName {
+  font-size: 16px;
+}
+
+.stats {
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+.active {
+  margin-left: 60px;
+}
