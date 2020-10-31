@@ -4,6 +4,7 @@ import style from './Content.module.css'
 import HomePage from './HomePage/HomePage'
 import MessagePage from './MessagePages/MessagePages'
 import MusicPage from './MusicPage/MusicPage'
+import Services from './Services/Services'
 
 
 const Content = () => {
@@ -12,6 +13,7 @@ const Content = () => {
       <Route path='/home' render={ () => <HomePage />} />
       <Route path='/messages' render={ () => <MessagePage />} />
       <Route path='/music' render={ () => <MusicPage />} />
+      <Route path='/services' render={ () => <Services />} />
     </div>
   )
 }

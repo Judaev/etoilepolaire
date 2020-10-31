@@ -1,6 +1,7 @@
 .sidebar {
   /* display: grid;
   grid-area: sidebar; */
+  width: 25%;
 
   background-color: #ffffff;
 }

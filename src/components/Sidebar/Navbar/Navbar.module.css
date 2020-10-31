@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
 
-  padding: 5px 0 5px 5px;
+  padding: 5px 0 5px 15px;
 }
 
 .item:active {
@@ -10,8 +10,13 @@
 }
 
 .item:hover {
-  /* border-left: 5px solid blue; */
+  border-left: 5px solid blue;
   background-color: rgb(238, 238, 238);
+}
+
+.inner {
+  display: flex;
+  vertical-align: center;
 }
 
 .photo {
@@ -24,13 +29,9 @@
   width: 230px;
   font-size: 20px;
   color: #000;
+  align-items: center;
 
   text-decoration: none;
-}
-
-.active {
-  border-left: 10px solid blue;
-  margin-left: 20px;
 }
 
 .activeText {

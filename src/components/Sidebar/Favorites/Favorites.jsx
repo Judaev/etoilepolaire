@@ -6,7 +6,7 @@ const Favorites = () => {
   return (
     <div className={style.main}>
       <div className={style.title}>Favorites</div>
-      <div>
+      <div className={style.items}>
         <FavoritesItem />
         <FavoritesItem />
         <FavoritesItem />
