@@ -10,10 +10,12 @@ import Services from './Services/Services'
 const Content = () => {
   return (
     <div className={style.content}>
-      <Route path='/home' render={ () => <HomePage />} />
-      <Route path='/messages' render={ () => <MessagePage />} />
-      <Route path='/music' render={ () => <MusicPage />} />
-      <Route path='/services' render={ () => <Services />} />
+      <div className={style.container}>
+        <Route path='/home' render={ () => <HomePage />} />
+        <Route path='/messages' render={ () => <MessagePage />} />
+        <Route path='/music' render={ () => <MusicPage />} />
+        <Route path='/services' render={ () => <Services />} />
+      </div>
     </div>
   )
 }

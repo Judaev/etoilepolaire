@@ -9,8 +9,6 @@ function App() {
       <Sidebar />
       <Content />
       <Feed /> 
-
-      
     </div>
   );
 }

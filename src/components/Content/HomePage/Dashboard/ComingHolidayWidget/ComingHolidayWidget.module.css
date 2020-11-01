@@ -1,0 +1,53 @@
+.main {
+  margin: 5px;
+  width: 250px;
+  height: 175px;
+  /* border: 2px solid #000; */
+  border-radius: 15px;
+
+  background: rgb(255,0,0);
+  background: linear-gradient(43deg, rgba(255,0,0,1) 0%, rgba(241,170,39,1) 62%, rgba(255,247,0,1) 100%);
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  padding-top: 10px;
+
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  text-shadow: black 0 0 5px;
+
+  text-align: center;
+}
+
+.subtitle {
+  margin: 5px 10px;
+
+  color: white;
+  font-weight: 18px;
+  text-shadow: black 0 0 3px;
+}
+
+.item {
+  display: flex;
+  margin: 30px 10px 10px 40px;
+
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.days {
+  margin-left: 20px;
+  font-size: 22px;
+  color: white;
+  font-weight: 700;
+
+  text-shadow: black 0 0 5px;
+}

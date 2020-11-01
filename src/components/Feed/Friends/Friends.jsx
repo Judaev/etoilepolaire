@@ -13,10 +13,8 @@ const Friends = () => {
         <FriendsItem />
         <FriendsItem />
         <FriendsItem />
-        <FriendsItem />
       </div>
       <div className={style.items}>
-        <FriendsItem />
         <FriendsItem />
         <FriendsItem />
         <FriendsItem />

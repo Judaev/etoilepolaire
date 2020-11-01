@@ -1,0 +1,13 @@
+.main {
+  position: relative;
+  padding: 5px;
+  width: 250px;
+  height: 270px;
+
+  padding: 5px 10px 10px 15px;
+
+  /* border: 2px solid #000; */
+  border-radius: 15px;
+
+  background-image: url('https://www.maketecheasier.com/assets/uploads/2020/06/Featured-Image-Live-Weather-Wallpapers-Android.jpg');
+}

@@ -15,6 +15,14 @@ const Notification = (props) => {
       <NotificationItem />        
       <NotificationItem />        
       <NotificationItem />       
+      <NotificationItem />       
+      <NotificationItem />       
+      <NotificationItem />       
+      <NotificationItem />       
+      <NotificationItem />       
+      <NotificationItem />       
+      <NotificationItem />       
+      <NotificationItem />      
       </div>
     </div>
     

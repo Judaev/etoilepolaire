@@ -12,6 +12,8 @@ const Sidebar = () => {
       <Profile />
       <Navbar />
       <Favorites />
+      <Favorites />
+      <Favorites />
     </div>
   )
 }

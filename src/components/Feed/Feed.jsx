@@ -7,9 +7,9 @@ import Notification from './Notification/Notification'
 const Feed = () => {
   return (
     <div className={style.feed}>
-      <Interesting />
-      <Friends />
-      <Notification />
+        <Interesting />
+        <Friends />
+        <Notification />
     </div>
   )
 }

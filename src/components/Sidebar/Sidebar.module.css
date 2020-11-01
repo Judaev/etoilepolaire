@@ -1,7 +1,15 @@
 .sidebar {
-  /* display: grid;
-  grid-area: sidebar; */
-  width: 25%;
+  position: fixed;
+  left: 0;
+
+  width: 20%;
+  height: 100%;
+
+  overflow-x: auto;
 
   background-color: #ffffff;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 0;
 }
