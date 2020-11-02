@@ -1,0 +1,27 @@
+.main {
+  border: 3px solid black;
+  border-radius: 15px;
+
+  width: 550px;
+  height: 700px;
+}
+
+.messagesInput {
+  display: flex;
+  position: absolute;
+  bottom: 5px;
+
+  align-items: center;
+
+  border: 2px solid #000;
+  border-radius: 15px;
+}
+
+.input {
+  outline: none;
+  border-radius: 15px;
+}
+
+.button {
+  margin-left: 15px;
+}

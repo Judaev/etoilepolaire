@@ -1,6 +1,9 @@
 .content {
-  width: 80%;
+  position: fixed;
+  width: 60%;
   height: 100%;
+
+  overflow: auto;
 
   margin-left: 20%;
   margin-right: 20%;
@@ -10,11 +13,19 @@
   scrollbar-color: blue;
 }
 
-.content::-webkit-scrollbar{
+.content::-webkit-scrollbar {
   width: 0;
   background-color: blue;
 }
 
 .container {
-  margin: 10px 30px 0 30px;
+  padding: 10px 30px 0 20px;
 }
+
+/* @media (max-width: 1510px) {
+
+  .content {
+    margin-left: 16%;
+  }
+
+} */

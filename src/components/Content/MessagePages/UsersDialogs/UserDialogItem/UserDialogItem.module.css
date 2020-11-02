@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  margin: 5px 3px;
+
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+.main:hover {
+  background-color: rgb(175, 175, 175);
+}
+
+.userPhoto {
+  width: 46px;
+  height: 46px;
+
+  border-radius: 50%;
+}
+
+.item {
+  margin-left: 5px;
+}
+
+.userName {
+  color: black;
+}

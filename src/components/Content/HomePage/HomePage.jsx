@@ -9,6 +9,10 @@ const HomePage = (props) => {
     <div className={style.main}>
       <HeaderHomePage />
       <Dashboard />
+      <Dashboard />
+      <Dashboard />
+      <Dashboard />
+      <Dashboard />
       <News />
     </div>
   )

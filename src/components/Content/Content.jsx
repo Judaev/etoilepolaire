@@ -7,7 +7,7 @@ import MusicPage from './MusicPage/MusicPage'
 import Services from './Services/Services'
 
 
-const Content = () => {
+const Content = (props) => {
   return (
     <div className={style.content}>
       <div className={style.container}>

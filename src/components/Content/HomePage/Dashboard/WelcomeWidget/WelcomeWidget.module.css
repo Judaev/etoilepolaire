@@ -1,0 +1,24 @@
+.main {
+  width: 180px;
+  height: 270px;
+
+  padding: 5px;
+
+  background: rgb(0,203,255);
+  background: linear-gradient(43deg, rgba(0,203,255,1) 0%, rgba(0,77,251,1) 50%, rgba(93,0,255,1) 100%);
+
+  border: 1px solid #000;
+  border-radius: 15px;
+}
+
+.title {
+  margin-top: 70px;
+  font-size: 22px;
+  color: white;
+}
+
+.name {
+  background-color: #000;
+  color: rgb(89, 106, 255)
+  /* text-shadow: white 0 0 5px; */
+}

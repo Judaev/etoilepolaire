@@ -1,0 +1,12 @@
+.main {
+  position: fixed;
+  width: 260px;
+  border-radius: 15px;
+  background-color: #e7e7e7;
+}
+
+.finder {
+  display: flex;
+
+  padding: 5px;
+}
