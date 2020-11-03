@@ -7,10 +7,10 @@ const MessagePages = (props) => {
   return (
     <div className={style.main}>
       <div className={style.item}>
-        <UsersDialogs /> 
+        <UsersDialogs userData={props.state} /> 
       </div>
       <div>
-        <MessagesSpace />  
+        <MessagesSpace messagesData={props.state} />  
       </div>
     </div>
   )

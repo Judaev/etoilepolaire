@@ -2,22 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import store from './redux/store'
+import state from './redux/state'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
-let rerenderEntireTree = (store) => {
+
   ReactDOM.render(
     <React.StrictMode>
       <BrowserRouter>
-        <App store={store} />
+        <App state={state} />
       </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root')
-  );  
-}
+  ); 
 
-rerenderEntireTree()
+// rerenderEntireTree()
 
 
 

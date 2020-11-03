@@ -7,7 +7,7 @@ function App(props) {
   return (
     <div className="appWrapper">
       <Sidebar />
-      <Content state={props.store} />
+      <Content state={props.state} />
       <Feed /> 
     </div>
   );

@@ -2,17 +2,9 @@ import React from 'react'
 import Message from './Message/Message'
 import style from './MessagesSpace.module.css'
 
-const MessagesSpace = () => {
-
-  let oldMessages = [
-    { id: 1, message: 'Hello' },
-    { id: 2, message: 'How are you?' },
-    { id: 3, message: 'Fine' },
-    { id: 4, message: 'Okay' },
-    { id: 5, message: 'Goodluck!' },
-  ]
-
-  let newMessages = oldMessages
+const MessagesSpace = (props) => {
+  
+  let newMessages = props.messagesData.messages
       .map( message => <Message message={message.message} /> )
 
   return (
