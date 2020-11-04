@@ -1,3 +1,5 @@
+import rerenderEntireTree from '../render'
+
 let state = {
   messagesPage: {
     dialogs: [
@@ -15,8 +17,25 @@ let state = {
       { id: 5, message: 'Goodluck!' },
     ],
     newMessageBody: '',
+  },
+  profilePage: {
+    posts: [
+      { id: 1, userName: 'Varvara', post:'Привет, как у тебя дела?'},
+      { id: 2, userName: 'Mops', post:'Привет, как у тебя дела?'},
+      { id: 3, userName: 'Mega Mops', post:'Привет, как у тебя дела?'},
+      { id: 4, userName: 'Big Mops', post:'Привет, как у тебя дела?'},
+    ]
   }
 }
 
+export let addPost = (postMessage) => {
+  let newPost = {
+    id: 5,
+    userName: 'Кто то',
+    post: postMessage
+  }
+  state.profilePage.posts.push(newPost)
+  rerenderEntireTree(state)
+}
 
 export default state

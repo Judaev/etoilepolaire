@@ -13,6 +13,12 @@ const Navbar = () => {
       </div>
       <div className={style.item}>
         <div>
+          <img src="https://www.flaticon.com/svg/static/icons/svg/860/860784.svg" className={style.photo}/>
+          <NavLink to='/profile' className={style.navlink} activeClassName={style.activeText}>Profile</NavLink>
+        </div>
+      </div>
+      <div className={style.item}>
+        <div>
           <img src="https://www.flaticon.com/svg/static/icons/svg/2462/2462719.svg" className={style.photo}/>
           <NavLink to='/messages' className={style.navlink} activeClassName={style.activeText}>Messages</NavLink>
         </div>

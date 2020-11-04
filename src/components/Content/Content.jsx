@@ -5,6 +5,7 @@ import HomePage from './HomePage/HomePage'
 import Main from './Main/Main'
 import MessagePage from './MessagePages/MessagePages'
 import MusicPage from './MusicPage/MusicPage'
+import ProfilePage from './ProfilePage/ProfilePage'
 import Services from './Services/Services'
 
 
@@ -14,6 +15,7 @@ const Content = (props) => {
       <div className={style.container}>
         <Route path='/etoilepolaire' render={ () => <Main />} />
         <Route path='/home' render={ () => <HomePage />} />
+        <Route path='/profile' render={ () => <ProfilePage state={props.state.profilePage} addPost={props.addPost} />} />
         <Route path='/messages' render={ () => <MessagePage state={ props.state.messagesPage } />} />
         <Route path='/music' render={ () => <MusicPage />} />
         <Route path='/services' render={ () => <Services />} />

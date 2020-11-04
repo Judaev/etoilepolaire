@@ -1,0 +1,21 @@
+.main {
+  padding: 10px;
+  margin-top: 20px;
+
+  border: 3px solid #000;
+  border-radius: 15px;
+}
+
+.createPost {
+  display: flex;
+
+  /* margin-bottom: 20px; */
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #000;
+}
+
+.button {
+  
+  margin-left: 20px;
+}
