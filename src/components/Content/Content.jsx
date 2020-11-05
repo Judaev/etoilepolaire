@@ -7,6 +7,7 @@ import MessagePage from './MessagePages/MessagePages'
 import MusicPage from './MusicPage/MusicPage'
 import ProfilePage from './ProfilePage/ProfilePage'
 import Services from './Services/Services'
+import Settings from './Settings/Settings'
 
 
 const Content = (props) => {
@@ -15,10 +16,11 @@ const Content = (props) => {
       <div className={style.container}>
         <Route path='/etoilepolaire' render={ () => <Main />} />
         <Route path='/home' render={ () => <HomePage />} />
-        <Route path='/profile' render={ () => <ProfilePage state={props.state.profilePage} addPost={props.addPost} />} />
-        <Route path='/messages' render={ () => <MessagePage state={ props.state.messagesPage } />} />
+        <Route path='/profile' render={ () => <ProfilePage profilePage={props.state.profilePage} addPost={props.addPost}updateNewPostText={props.updateNewPostText} /> } />
+        <Route path='/messages' render={ () => <MessagePage state={ props.state.messagesPage } addMessage={props.addMessage} updateNewMessageText={props.updateNewMessageText}  />} />
         <Route path='/music' render={ () => <MusicPage />} />
         <Route path='/services' render={ () => <Services />} />
+        <Route path='/settings' render={ () => <Settings />} />
       </div>
     </div>
   )

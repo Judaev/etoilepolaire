@@ -7,10 +7,14 @@ const MessagesSpace = (props) => {
   let newMessageElement = React.createRef()
 
   let addMessage = () => {
-    let text = newMessageElement.current.value
-    return alert(text)
+    props.addMessage()
   }
-  
+
+  let onMessageChange = () => {
+    let text = newMessageElement.current.value
+    props.updateNewMessageText(text)
+  }
+
   let newMessages = props.messagesData.messages
       .map( message => <Message message={message.message} /> )
 
@@ -20,7 +24,7 @@ const MessagesSpace = (props) => {
         { newMessages } 
       </div>
       <div className={style.messagesInput}>
-        <textarea className={style.input} name="" ref={newMessageElement} cols="50" rows="2" placeholder='Введите сообщение...'></textarea>
+        <textarea className={style.input} onChange={onMessageChange} value={props.newMessageBody} ref={newMessageElement} cols="50" rows="2" placeholder='Введите сообщение...'></textarea>
         <button className={style.button} onClick={addMessage}>Отправить</button>
       </div>
     </div>

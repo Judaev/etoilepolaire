@@ -7,7 +7,11 @@ function App(props) {
   return (
     <div className="appWrapper">
       <Sidebar />
-      <Content state={props.state} addPost={props.addPost} />
+      <Content state={props.state}
+               addPost={props.addPost}
+               updateNewPostText={props.updateNewPostText}
+               addMessage={props.addMessage}
+               updateNewMessageText={props.updateNewMessageText} />
       <Feed /> 
     </div>
   );

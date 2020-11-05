@@ -13,13 +13,19 @@
 }
 
 .input {
-  width: 250px;
+  width: 90px;
   height: 25px;
   border: none;
   padding: 0 0 0 10px;
   background-color: #e7e7e7;
   color: black;
   outline: none;
+
+  transition: width .2s linear;
+}
+
+.input:focus {
+  width: 250px;
 }
 
 .button {

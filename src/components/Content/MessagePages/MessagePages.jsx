@@ -10,7 +10,10 @@ const MessagePages = (props) => {
         <UsersDialogs userData={props.state} /> 
       </div>
       <div>
-        <MessagesSpace messagesData={props.state} />  
+        <MessagesSpace messagesData={props.state}
+                       newMessageBody={props.state.newMessageBody}
+                       addMessage={props.addMessage}
+                       updateNewMessageText={props.updateNewMessageText} />  
       </div>
     </div>
   )
