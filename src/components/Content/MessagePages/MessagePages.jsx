@@ -12,8 +12,7 @@ const MessagePages = (props) => {
       <div>
         <MessagesSpace messagesData={props.state}
                        newMessageBody={props.state.newMessageBody}
-                       addMessage={props.addMessage}
-                       updateNewMessageText={props.updateNewMessageText} />  
+                       dispatch={props.dispatch} />  
       </div>
     </div>
   )

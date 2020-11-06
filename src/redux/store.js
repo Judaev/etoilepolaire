@@ -1,3 +1,6 @@
+import messagesReducer from "./messagesReducer"
+import profileReducer from "./profileReducer"
+
 let store = {
   _state: {
     messagesPage: {
@@ -27,44 +30,57 @@ let store = {
       newPostText: 'Varvara',
     },
   },
-  getState() {
-    return this._state
-  },
   _callSubscriber() {
     console.log('State changed')
   },
-  addPost() {
-    let newPost = {
-      id: 5,
-      userName: 'Кто то',
-      post: this._state.profilePage.newPostText,
-    }
-    this._state.profilePage.posts.push(newPost)
-    this._state.profilePage.newPostText = ''
-    this._callSubscriber(this._state)
-  },
-  updateNewPostText(newText) {
-    this._state.profilePage.newPostText = newText
-    this._callSubscriber(this._state)
-  },
-  addMessage() {
-    let newMessage = {
-      id: 6,
-      message: this._state.messagesPage.newMessageBody,
-    }
-    this._state.messagesPage.messages.push(newMessage)
-    this._state.messagesPage.newMessageBody = ''
-    this._callSubscriber(this._state)
-  },
-  updateNewMessageText(newText) {
-    this._state.messagesPage.newMessageBody = newText
-    this._callSubscriber(this._state)
+  getState() {
+    return this._state
   },
   subscribe(observer) {
     this._callSubscriber = observer
   },
+  dispatch(action) {
+
+    this._state.profilePage = profileReducer(this._state.profilePage, action)
+    this._state.messagesPage = messagesReducer(this._state.messagesPage, action)
+
+    this._callSubscriber(this._state)
+  },
+
 }
 
-window.store = store.state
+window.store = store
 
 export default store
+
+
+
+
+// _addPost() {
+//   let newPost = {
+//     id: 5,
+//     userName: 'Кто то',
+//     post: this._state.profilePage.newPostText,
+//   }
+//   this._state.profilePage.posts.push(newPost)
+//   this._state.profilePage.newPostText = ''
+//   this._callSubscriber(this._state)
+// },
+// _updateNewPostText(newText) {
+//   this._state.profilePage.newPostText = newText
+//   this._callSubscriber(this._state)
+// },
+
+// _addMessage() {
+//   let newMessage = {
+//     id: 6,
+//     message: this._state.messagesPage.newMessageBody,
+//   }
+//   this._state.messagesPage.messages.push(newMessage)
+//   this._state.messagesPage.newMessageBody = ''
+//   this._callSubscriber(this._state)
+// },
+// _updateNewMessageText(newText) {
+//   this._state.messagesPage.newMessageBody = newText
+//   this._callSubscriber(this._state)
+// },

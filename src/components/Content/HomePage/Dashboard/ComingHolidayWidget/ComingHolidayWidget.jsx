@@ -9,7 +9,7 @@ const ComingHolidayWidget = () => {
         <div className={style.subtitle}>До нового года осталось: </div>
         <div className={style.item}>
           <img className={style.icon} src="https://www.flaticon.com/svg/static/icons/svg/191/191382.svg" alt=""/>
-          <div className={style.days}>56 день</div> 
+          <div className={style.days}>55 день</div> 
         </div>
       </div>
     </div>

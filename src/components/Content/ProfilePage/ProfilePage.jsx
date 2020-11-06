@@ -4,7 +4,7 @@ import ProfileInfo from './ProfileInfo/ProfileInfo'
 import style from './ProfilePage.module.css'
 
 const ProfilePage = (props) => {
-  debugger
+  // debugger
   return (
     <div>
       <div>
@@ -13,8 +13,7 @@ const ProfilePage = (props) => {
       <div>
         <PostsPage profilePage={props.profilePage}
                    newPostText={props.profilePage.newPostText}
-                   updateNewPostText={props.updateNewPostText}
-                   addPost={props.addPost} />
+                   dispatch={props.dispatch} />
       </div>
     </div>
   )

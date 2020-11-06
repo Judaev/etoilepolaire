@@ -1,4 +1,5 @@
 import React from 'react'
+import { addPostActionCreater, updateNewPostTextActionCreater } from '../../../../redux/profileReducer'
 import PostsItems from './PostsItems/PostsItems'
 import style from './PostsPage.module.css'
 
@@ -6,12 +7,12 @@ const PostsPage = (props) => {
   let newPostElement = React.createRef()
 
   let addPost = () => {
-    props.addPost()
+    props.dispatch(addPostActionCreater())
   }
 
   let onPostChange = () => {
     let text = newPostElement.current.value
-    props.updateNewPostText(text)
+    props.dispatch(updateNewPostTextActionCreater(text))
   }
 
   return (
