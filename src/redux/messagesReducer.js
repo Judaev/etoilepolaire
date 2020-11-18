@@ -10,7 +10,7 @@ let initialState = {
     { id: 5, name: 'Mopsya' },
   ],
   messages: [
-    { id: 1, message: 'Hello', className: 'myMessages' },
+    { id: 1, message: 'Hello', className: 'style.myMessages' },
     { id: 2, message: 'How are you?' },
     { id: 3, message: 'Fine' },
     { id: 4, message: 'Okay' },

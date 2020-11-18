@@ -2,9 +2,10 @@ import React from 'react'
 import style from './Message.module.css'
 
 const Message = (props) => {
+  // debugger
   return (
     <div>
-      <div className={`${style}.${props.className}`}>{props.message}</div>
+      <div className={props.className}>{props.message}</div>
     </div>
   )
 }

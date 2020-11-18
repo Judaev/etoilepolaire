@@ -4,6 +4,7 @@ import MessagesSpace from './MessagesSpace/MessagesSpace'
 import UsersDialogs from './UsersDialogs/UsersDialogs'
 
 const MessagePages = (props) => {
+  debugger
   return (
     <div className={style.main}>
       <div className={style.item}>

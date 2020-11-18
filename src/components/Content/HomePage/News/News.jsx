@@ -3,7 +3,9 @@ import style from './News.module.css'
 
 const News = () => {
   return (
-    <div>News</div>
+    <div className={style.main}>
+      News API
+    </div>
   )
 }
 
