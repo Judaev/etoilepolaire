@@ -16,10 +16,8 @@ const Content = (props) => {
       <div className={style.container}>
         <Route path='/etoilepolaire' render={ () => <Main />} />
         <Route path='/home' render={ () => <HomePage />} />
-        <Route path='/profile' render={ () => <ProfilePage profilePage={props.state.profilePage} 
-                                                           dispatch={props.dispatch} /> } />
-        <Route path='/messages' render={ () => <MessagePage state={ props.state.messagesPage } 
-                                                            dispatch={props.dispatch} />} />
+        <Route path='/profile' render={ () => <ProfilePage /> } />
+        <Route path='/messages' render={ () => <MessagePage />} />
         <Route path='/music' render={ () => <MusicPage />} />
         <Route path='/services' render={ () => <Services />} />
         <Route path='/settings' render={ () => <Settings />} />

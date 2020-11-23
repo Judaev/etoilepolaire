@@ -1,20 +1,19 @@
 import React from 'react'
-import { sendMessageCreater, updateNewMessageTextCreater } from '../../../../redux/messagesReducer'
 import Message from './Message/Message'
 import style from './MessagesSpace.module.css'
 
 const MessagesSpace = (props) => {
 
   let addMessage = () => {
-    props.dispatch(sendMessageCreater())
+    props.sendMessage()
   }
 
   let onMessageChange = (event) => {
     let text = event.target.value
-    props.dispatch(updateNewMessageTextCreater(text))
+    props.updateNewMessageText(text)
   }
   
-  let newMessages = props.messagesData.messages
+  let newMessages = props.messages
       .map( message => <Message message={message.message} className={message.className} /> )
 
   return (

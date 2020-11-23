@@ -5,7 +5,7 @@ const CalendarWidget = () => {
   return (
     <div className={style.main}>
       <div className={style.title}>Ноябрь</div>
-      <div className={style.subtitle}>18</div>
+      <div className={style.subtitle}>24</div>
     </div>
   )
 }

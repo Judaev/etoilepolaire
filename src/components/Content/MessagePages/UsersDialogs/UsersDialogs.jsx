@@ -5,7 +5,7 @@ import UserDialogItem from './UserDialogItem/UserDialogItem'
 
 const UsersDialogs = (props) => {
   
-  let dialogsElements = props.userData.dialogs
+  let dialogsElements = props.dialogs
     .map( dialog => <UserDialogItem userName={dialog.name} id={dialog.id} /> )
 
     

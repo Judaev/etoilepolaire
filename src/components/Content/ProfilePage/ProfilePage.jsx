@@ -1,19 +1,16 @@
 import React from 'react'
-import PostsPage from './PostsPage/PostsPage'
+import PostsPageContainer from './PostsPage/PostsPageContainer'
 import ProfileInfo from './ProfileInfo/ProfileInfo'
 import style from './ProfilePage.module.css'
 
 const ProfilePage = (props) => {
-  // debugger
   return (
     <div>
       <div>
         <ProfileInfo />
       </div>
       <div>
-        <PostsPage profilePage={props.profilePage}
-                   newPostText={props.profilePage.newPostText}
-                   dispatch={props.dispatch} />
+        <PostsPageContainer />
       </div>
     </div>
   )
