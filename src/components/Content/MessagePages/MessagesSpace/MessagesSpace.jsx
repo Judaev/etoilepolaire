@@ -14,7 +14,7 @@ const MessagesSpace = (props) => {
   }
   
   let newMessages = props.messages
-      .map( message => <Message message={message.message} className={message.className} /> )
+      .map( message => <Message message={message.message} key={message.id} className={message.className} /> )
 
   return (
     <div className={style.main}>

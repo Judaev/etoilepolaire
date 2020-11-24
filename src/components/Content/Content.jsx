@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 import style from './Content.module.css'
+import FriendsPage from './FriendsPage/FriendsPage'
 import HomePage from './HomePage/HomePage'
 import Main from './Main/Main'
 import MessagePage from './MessagePages/MessagePages'
@@ -21,6 +22,7 @@ const Content = (props) => {
         <Route path='/music' render={ () => <MusicPage />} />
         <Route path='/services' render={ () => <Services />} />
         <Route path='/settings' render={ () => <Settings />} />
+        <Route path='/friends' render={ () => <FriendsPage />} />
       </div>
     </div>
   )

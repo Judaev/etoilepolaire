@@ -1,9 +1,10 @@
 import React from 'react'
+import style from './Services.module.css'
 
 const Services = () => {
   return (
     <div>
-      Services Item
+      <div className={style.title}>Services Item</div>
     </div>
   )
 }

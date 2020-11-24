@@ -5,7 +5,7 @@ import style from './PostsItems.module.css'
 const PostsItems = (props) => {
 
   let postElement = props.posts.posts
-    .map( post => <Post userName={post.userName} post={post.post} />)
+    .map( post => <Post userName={post.userName} key={post.id} post={post.post} />)
 
   return (
     <div>
