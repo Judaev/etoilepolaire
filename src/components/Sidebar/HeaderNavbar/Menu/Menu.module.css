@@ -1,8 +1,13 @@
 .item {
   width: 25px;
+  cursor: pointer;
 }
 
 .icon {
   width: 20px;
   height: 20px;
+}
+
+.item:active .sidebar {
+  width: 0;
 }

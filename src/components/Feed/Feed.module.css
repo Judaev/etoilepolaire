@@ -2,7 +2,7 @@
   position: fixed;
   right: 0;
 
-  width: 20%;
+  width: 15%;
   height: 100%;
   
   overflow-x: auto;
@@ -12,4 +12,11 @@
 
 .feed::-webkit-scrollbar{
   width: 0;
+}
+
+@media (max-width: 450px) {
+
+  .feed {
+    width: 0;
+  }
 }

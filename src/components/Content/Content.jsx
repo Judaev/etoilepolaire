@@ -22,7 +22,7 @@ const Content = (props) => {
         <Route path='/music' render={ () => <MusicPage />} />
         <Route path='/services' render={ () => <Services />} />
         <Route path='/settings' render={ () => <Settings />} />
-        <Route path='/friends' render={ () => <FriendsPage />} />
+        <Route path='/friends' render={ () => <FriendsPage  />} />
       </div>
     </div>
   )

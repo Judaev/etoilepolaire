@@ -1,8 +1,9 @@
 .main {
-  padding-top: 60px;
 
-  width: 250px;
-  height: 200px;
+  margin: 0 auto;
+
+  width: 320px;
+  height: 100%;
 
   font-size: 44px;
   color: white;

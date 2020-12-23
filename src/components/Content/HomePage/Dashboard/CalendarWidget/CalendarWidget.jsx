@@ -4,8 +4,8 @@ import style from './CalendarWidget.module.css'
 const CalendarWidget = () => {
   return (
     <div className={style.main}>
-      <div className={style.title}>Ноябрь</div>
-      <div className={style.subtitle}>24</div>
+      <div className={style.title}>Декабрь</div>
+      <div className={style.subtitle}>23</div>
     </div>
   )
 }
