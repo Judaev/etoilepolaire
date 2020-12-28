@@ -4,3 +4,8 @@
   font-size: 44px;
   font-weight: 700;
 }
+
+.photoUrl {
+  width: 200px;
+  height: 120px;
+}
