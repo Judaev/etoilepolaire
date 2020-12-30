@@ -2,14 +2,14 @@ import React from 'react'
 import Dashboard from './Dashboard/Dashboard'
 import HeaderHomePage from './HeaderHomePage/HeaderHomePage'
 import style from './HomePage.module.css'
-import News from './News/News'
+import NewsContainer from './News/NewsContainer'
 
 const HomePage = (props) => {
   return (
     <div className={style.main}>
       <HeaderHomePage />
       <Dashboard />
-      <News />
+      <NewsContainer />
     </div>
   )
 }
