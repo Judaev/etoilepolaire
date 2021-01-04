@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/etoilepolaire/static/css/main.22cc1d76.chunk.css",
-    "main.js": "/etoilepolaire/static/js/main.ce6ffa93.chunk.js",
-    "main.js.map": "/etoilepolaire/static/js/main.ce6ffa93.chunk.js.map",
-    "runtime-main.js": "/etoilepolaire/static/js/runtime-main.7618ec73.js",
-    "runtime-main.js.map": "/etoilepolaire/static/js/runtime-main.7618ec73.js.map",
-    "static/js/2.990bae4e.chunk.js": "/etoilepolaire/static/js/2.990bae4e.chunk.js",
-    "static/js/2.990bae4e.chunk.js.map": "/etoilepolaire/static/js/2.990bae4e.chunk.js.map",
-    "static/js/3.787bae5f.chunk.js": "/etoilepolaire/static/js/3.787bae5f.chunk.js",
-    "static/js/3.787bae5f.chunk.js.map": "/etoilepolaire/static/js/3.787bae5f.chunk.js.map",
+    "main.js": "/etoilepolaire/static/js/main.e055fca8.chunk.js",
+    "main.js.map": "/etoilepolaire/static/js/main.e055fca8.chunk.js.map",
+    "runtime-main.js": "/etoilepolaire/static/js/runtime-main.9be8dea0.js",
+    "runtime-main.js.map": "/etoilepolaire/static/js/runtime-main.9be8dea0.js.map",
+    "static/js/2.856870b2.chunk.js": "/etoilepolaire/static/js/2.856870b2.chunk.js",
+    "static/js/2.856870b2.chunk.js.map": "/etoilepolaire/static/js/2.856870b2.chunk.js.map",
+    "static/js/3.022fa31e.chunk.js": "/etoilepolaire/static/js/3.022fa31e.chunk.js",
+    "static/js/3.022fa31e.chunk.js.map": "/etoilepolaire/static/js/3.022fa31e.chunk.js.map",
     "index.html": "/etoilepolaire/index.html",
     "static/css/main.22cc1d76.chunk.css.map": "/etoilepolaire/static/css/main.22cc1d76.chunk.css.map",
-    "static/js/2.990bae4e.chunk.js.LICENSE.txt": "/etoilepolaire/static/js/2.990bae4e.chunk.js.LICENSE.txt"
+    "static/js/2.856870b2.chunk.js.LICENSE.txt": "/etoilepolaire/static/js/2.856870b2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7618ec73.js",
-    "static/js/2.990bae4e.chunk.js",
+    "static/js/runtime-main.9be8dea0.js",
+    "static/js/2.856870b2.chunk.js",
     "static/css/main.22cc1d76.chunk.css",
-    "static/js/main.ce6ffa93.chunk.js"
+    "static/js/main.e055fca8.chunk.js"
   ]
 }
