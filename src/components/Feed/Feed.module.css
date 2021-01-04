@@ -7,7 +7,8 @@
   
   overflow-x: auto;
 
-  background-color: #e7e7e7;
+  /* background-color: #e7e7e7; */
+  background-color: #d7d7e6;
 }
 
 .feed::-webkit-scrollbar{

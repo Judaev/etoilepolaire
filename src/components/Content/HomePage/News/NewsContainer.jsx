@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { setNewsAC } from '../../../../redux/newsReducer'
-import News from './News'
+import NewsC from './NewsC'
 
 let mapStateToProps = (state) => {
   return {
@@ -17,4 +17,4 @@ let mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps) (News)
+export default connect(mapStateToProps, mapDispatchToProps) (NewsC)
