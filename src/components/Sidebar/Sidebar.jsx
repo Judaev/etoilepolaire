@@ -10,7 +10,6 @@ const Sidebar = () => {
   return (
     <div className={style.sidebar}>
       <HeaderNavbar />
-      <LoginBlockContainer />
       <Profile />
       <Navbar />
       <Favorites />

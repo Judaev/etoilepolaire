@@ -8,6 +8,13 @@ const instance = axios.create({
   },
 })
 
+const news = axios.create({
+  withCredentials: true,
+  headers: {
+    'API-KEY': '5792621ee47f4d679b54fa8cef10ad46'
+  }
+})
+
 export const usersAPI = {
   getUsers(currentPage = 1, pageSize = 5) {
     return instance
@@ -21,11 +28,29 @@ export const usersAPI = {
     return instance.delete(`follow/${userId}`)
   },
   getProfile(userId) {
-    return instance.get(
-      `https://social-network.samuraijs.com/api/1.0/profile/${userId}`
-    )
+    console.warn('Obsolete method. Please profileAPI object.')
+    return profileAPI.getProfile(userId)
   },
 }
+
+export const profileAPI = {
+  getProfile(userId) {
+    return instance.get(`profile/${userId}`)
+  },
+  getStatus(userId) {
+    return instance.get(`profile/status/${userId}`)
+  },
+  updateStatus(status) {
+    return instance.put(`profile/status/`, { status: status })
+  }
+}
+
+// export const newsAPI = {
+//   getNews() {
+//     return news.get('http://newsapi.org/v2/everything?domains=wsj.com&apiKey=5792621ee47f4d679b54fa8cef10ad46').then(response => {
+//       props.setNews(response.data.articles)
+//   })
+// }
 
 export const authAPI = {
   me() {

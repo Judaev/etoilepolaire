@@ -21,16 +21,17 @@ class NewsC extends React.Component {
         )
         .then((response) => {
           this.props.setNews(response.data.articles)
+          this.props.visible = true
         })
     }
   }
 
   render() {
     return (
+
       <div className={style.main}>
         <div className={style.title}>Новости</div>
         {/* <button onClick={getNews}>Обновить</button> */}
-        <button onClick={() => this.getNews()}>Обновить</button>
         {this.props.news.map((u) => (
           <div className={style.item} key={u.source.id}>
             <span className={style.item__header}>

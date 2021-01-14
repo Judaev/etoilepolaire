@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import HeaderUsersDialogs from './HeaderUsersDialogs/HeaderUsersDialogs'
-import UserDialogItem from './UserDialogItem/UserDialogItem'
+import { compose } from 'redux'
+import withAuthRedirect from '../../../../hoc/withAuthRedirect'
 import UsersDialogs from './UsersDialogs'
 
 let mapStateToProps = (state) => {
@@ -16,6 +16,7 @@ let mapDispatchToProps = (dispatch) => {
   }
 }
 
-const UsersDialogsContainer = connect(mapStateToProps, mapDispatchToProps) (UsersDialogs)
-
-export default UsersDialogsContainer
+export default compose(
+  connect(mapStateToProps, mapDispatchToProps),
+  withAuthRedirect,
+)(UsersDialogs)

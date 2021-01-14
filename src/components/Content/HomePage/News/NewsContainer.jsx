@@ -5,7 +5,8 @@ import NewsC from './NewsC'
 
 let mapStateToProps = (state) => {
   return {
-    news: state.newsPage.news
+    news: state.newsPage.news,
+    visible: state.newsPage.visible
   }
 }
 

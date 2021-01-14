@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './ProfileInfo.module.css'
+import ProfileStatus from './ProfileStatus/ProfileStatus'
 
 const ProfileInfo = (props) => {
   return (
@@ -12,11 +13,10 @@ const ProfileInfo = (props) => {
         <div className={style.userName}>{props.profile.fullName}</div>
       </div>
       <div>{props.profile.aboutMe}</div>
+      <ProfileStatus status={props.status} updateStatus={props.updateStatus} />
       <div className={style.interests}>Интересы</div>
     </div>
   )
 }
 
 export default ProfileInfo
-
-// https://sun9-73.userapi.com/impf/QIvWvGGxXgr8weV0kmBztpU_ZB7SpMDsl8M-9w/t1Z5-AgM9OI.jpg?size=640x681&quality=96&proxy=1&sign=2eed07792a534defcd83be186acad850

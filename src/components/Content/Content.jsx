@@ -8,7 +8,8 @@ import MessagePage from './MessagePages/MessagePages'
 import MusicPage from './MusicPage/MusicPage'
 import ProfilePageContainer from './ProfilePage/ProfilePageContainer'
 import Services from './Services/Services'
-import Settings from './Settings/Settings'
+import Settings from './Settings/Settings'  
+import LoginPage from './LoginPage/LoginPage'
 
 
 const Content = (props) => {
@@ -23,6 +24,7 @@ const Content = (props) => {
         <Route path='/services' render={ () => <Services />} />
         <Route path='/settings' render={ () => <Settings />} />
         <Route path='/friends' render={ () => <FriendsPageContainer  />} />
+        <Route path='/login' render={ () => <LoginPage  />} />
       </div>
     </div>
   )

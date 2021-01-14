@@ -17,7 +17,6 @@ const News = (props) => {
   return (
     <div className={style.main}>
       <div className={style.title}>Новости</div>
-      <button onClick={getNews}>Обновить</button>
       { props.news.map(u => <div className={style.item} key={u.source.id}>
           <span>
             <div onClick={() => u.url} className={style.item__title}>{u.title}</div>

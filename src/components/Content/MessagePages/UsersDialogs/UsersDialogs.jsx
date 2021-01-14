@@ -2,6 +2,7 @@ import React from 'react'
 import HeaderUsersDialogs from './HeaderUsersDialogs/HeaderUsersDialogs'
 import style from './UsersDialogs.module.css'
 import UserDialogItem from './UserDialogItem/UserDialogItem'
+import { Redirect } from 'react-router-dom'
 
 const UsersDialogs = (props) => {
   
