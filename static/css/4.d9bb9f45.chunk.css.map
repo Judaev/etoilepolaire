@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/Content/MusicPage/MusicPage.module.css"],"names":[],"mappings":"AAAA,wBACE,QAAS,CAET,cAAe,CACf,eACF","file":"4.d9bb9f45.chunk.css","sourcesContent":[".title {\r\n  margin: 0;\r\n\r\n  font-size: 44px;\r\n  font-weight: 700;\r\n}"]}
