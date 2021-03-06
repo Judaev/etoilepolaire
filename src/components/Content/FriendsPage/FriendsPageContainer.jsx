@@ -5,23 +5,34 @@ import {
   unfollow,
   setCurrentPage,
   toggleFollowingProgress,
-  getUsers
+  requestUsers,
 } from '../../../redux/friendsReducer'
 import FriendsPage from './FriendsPage'
 import Preloader from '../../Common/Preloader/Preloader'
 import { usersAPI } from '../../../api/api'
 import withAuthRedirect from '../../../hoc/withAuthRedirect'
 import { compose } from 'redux'
+import {
+  getUsers,
+  getPageSize,
+  getTotalUsersCount,
+  getCurrentPage,
+  getIsFetching,
+  getFollowingInProgress,
+} from '../../../redux/friendsSelectors'
 
 class FriendsPageContainer extends React.Component {
   componentDidMount() {
-    this.props.getUsers(this.props.currentPage, this.props.pageSize)
+    const {currentPage, pageSize} = this.props
+    this.props.requestUsers(currentPage, pageSize)
   }
 
   getFriends = () => {
+    const {currentPage, pageSize} = this.props
+
     if (this.props.users.length === 0) {
       usersAPI
-        .getUsers(this.props.currentPage, this.props.pageSize)
+        .requestUsers(currentPage, pageSize)
         .then((data) => {
           this.props.setUsers(data.items)
           this.props.setTotalUsersCount(data.totalCount)
@@ -30,7 +41,9 @@ class FriendsPageContainer extends React.Component {
   }
 
   onPageChanged = (pageNumber) => {
-    this.props.getUsers(pageNumber, this.props.pageSize)
+    const {pageSize} = this.props
+
+    this.props.requestUsers(pageNumber, pageSize)
   }
 
   render() {
@@ -56,12 +69,12 @@ class FriendsPageContainer extends React.Component {
 
 let mapStateToProps = (state) => {
   return {
-    users: state.friendsPage.users,
-    pageSize: state.friendsPage.pageSize,
-    totalUsersCount: state.friendsPage.totalUsersCount,
-    currentPage: state.friendsPage.currentPage,
-    isFetching: state.friendsPage.isFetching,
-    followingInProgress: state.friendsPage.followingInProgress,
+    users: getUsers(state),
+    pageSize: getPageSize(state),
+    totalUsersCount: getTotalUsersCount(state),
+    currentPage: getCurrentPage(state),
+    isFetching: getIsFetching(state),
+    followingInProgress: getFollowingInProgress(state),
   }
 }
 
@@ -71,7 +84,7 @@ export default compose(
     unfollow,
     setCurrentPage,
     toggleFollowingProgress,
-    getUsers
+    requestUsers,
   }),
-  // withAuthRedirect
+  withAuthRedirect
 )(FriendsPageContainer)

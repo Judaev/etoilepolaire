@@ -17,7 +17,7 @@ const Dashboard = () => {
       </div>
       <div className={style.item}>
         <СurrencyWidget />
-        <ComingHolidayWidget />  
+        {/* <ComingHolidayWidget />   */}
       </div>
       <div>
         <Weather /> 

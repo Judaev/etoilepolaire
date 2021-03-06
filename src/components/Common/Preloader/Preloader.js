@@ -1,8 +1,10 @@
+import spin from '../../../img/Preloader/spin.gif'
+
 let Preloader = (props) => {
   return (
     <div style={{ margin: '0, auto' }}>
       <img
-        src="https://skopilkoi.ru/wp-content/uploads/2020/05/spin.gif"
+        src={spin}
         
       />
     </div>

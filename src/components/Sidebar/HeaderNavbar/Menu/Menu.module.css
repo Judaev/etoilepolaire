@@ -3,6 +3,10 @@
   cursor: pointer;
 }
 
+.item.hide {
+  width: 100px;
+}
+
 .icon {
   width: 20px;
   height: 20px;

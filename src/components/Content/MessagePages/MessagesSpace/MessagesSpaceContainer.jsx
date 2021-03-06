@@ -1,6 +1,5 @@
-import React from 'react'
 import { connect } from 'react-redux'
-import { sendMessageCreater, updateNewMessageTextCreater } from '../../../../redux/messagesReducer'
+import { sendMessageCreater } from '../../../../redux/messagesReducer'
 import MessagesSpace from './MessagesSpace'
 
 let mapStateToProps = (state) => {
@@ -12,11 +11,8 @@ let mapStateToProps = (state) => {
 
 let mapDispatchToProps = (dispatch) => {
   return {
-    updateNewMessageText: (text) => {
-      dispatch(updateNewMessageTextCreater(text))
-    },
-    sendMessage: () => {
-      dispatch(sendMessageCreater())
+    sendMessage: (newMessageBody) => {
+      dispatch(sendMessageCreater(newMessageBody))
     },
 
   }

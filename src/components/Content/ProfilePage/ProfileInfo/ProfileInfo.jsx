@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './ProfileInfo.module.css'
 import ProfileStatus from './ProfileStatus/ProfileStatus'
+import ProfileStatusWithHooks from './ProfileStatus/ProfileStatusWithHooks'
 
 const ProfileInfo = (props) => {
   return (
@@ -13,7 +14,7 @@ const ProfileInfo = (props) => {
         <div className={style.userName}>{props.profile.fullName}</div>
       </div>
       <div>{props.profile.aboutMe}</div>
-      <ProfileStatus status={props.status} updateStatus={props.updateStatus} />
+      <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus} />
       <div className={style.interests}>Интересы</div>
     </div>
   )

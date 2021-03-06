@@ -7,7 +7,7 @@ const LoginBlock = (props) => {
     <div>
       <div className={style.item}>
         <div className={style.title}>Login - </div>
-        {props.isAuth ? props.login : <NavLink to="/login">Login</NavLink>}  
+        {props.isAuth ? <div>{props.login} - <button onClick={props.logout}>Выйти</button> </div>  : <NavLink to="/login">Login</NavLink>}  
       </div>
     </div>
   )

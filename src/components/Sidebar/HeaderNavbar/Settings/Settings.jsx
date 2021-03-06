@@ -3,9 +3,6 @@ import { NavLink } from 'react-router-dom'
 import style from './Settings.module.css'
 
 const Settings = (props) => {
-
-
-
   return (
     <div className={style.item}>
       <NavLink to='./settings'>

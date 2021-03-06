@@ -6,10 +6,31 @@ import Navbar from './Navbar/Navbar'
 import Profile from './Profile/Profile'
 import style from './Sidebar.module.css'
 
-const Sidebar = () => {
+class SidebarContainer extends React.Component {
+  state = {
+    sidebar: true
+  }
+
+  hideSidebar = () => {
+    this.setState({
+      sidebar: false
+    })
+  }
+
+  render() {
+    return (
+      <>
+        { this.state.sidebar && <Sidebar hideSidebar={this.hideSidebar} /> } 
+      </>
+      
+    )
+  }
+}
+
+const Sidebar = (props) => {
   return (
     <div className={style.sidebar}>
-      <HeaderNavbar />
+      <HeaderNavbar hideSidebar={props.hideSidebar} />
       <Profile />
       <Navbar />
       <Favorites />
@@ -19,4 +40,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default SidebarContainer

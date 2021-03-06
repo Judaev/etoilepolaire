@@ -2,17 +2,16 @@ import React from 'react'
 import Preloader from '../../Common/Preloader/Preloader'
 import PostsPageContainer from './PostsPage/PostsPageContainer'
 import ProfileInfo from './ProfileInfo/ProfileInfo'
-import style from './ProfilePage.module.css'
 
-const ProfilePage = (props) => {
-  if (!props.profile) {
+const ProfilePage = ({profile, status, updateStatus}) => {
+  if (!profile) {
     return <Preloader />
   }
 
   return (
     <div>
       <div>
-        <ProfileInfo profile={props.profile} status={props.status} updateStatus={props.updateStatus} />
+        <ProfileInfo profile={profile} status={status} updateStatus={updateStatus} />
       </div>
       <div>
         <PostsPageContainer />
