@@ -7,8 +7,10 @@
   
   overflow-x: auto;
 
-  /* background-color: #e7e7e7; */
-  background-color: #d7d7e6;
+  background-color: #e7e7e7;
+  /* background-color: #d7d7e6; */
+  /* border-color: #fff; */
+  /* background-color: #1F2023; Темная тема */
 }
 
 .feed::-webkit-scrollbar{

@@ -24,9 +24,9 @@
   transition: width .2s linear;
 }
 
-.input:focus {
+/* .input:focus {
   width: 450px;
-}
+} */
 
 .button {
   outline: none;
@@ -45,6 +45,7 @@
   outline: none;
   color: white;
   background-color: blue;
+  cursor: pointer;
 
   border-radius: 5px;
 }

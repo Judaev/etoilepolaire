@@ -5,6 +5,7 @@ import LoginBlockContainer from './LoginBlock/LoginBlockContainer'
 import Navbar from './Navbar/Navbar'
 import Profile from './Profile/Profile'
 import style from './Sidebar.module.css'
+import theme from '../../Theme.module.css'
 
 class SidebarContainer extends React.Component {
   state = {
@@ -30,12 +31,14 @@ class SidebarContainer extends React.Component {
 const Sidebar = (props) => {
   return (
     <div className={style.sidebar}>
-      <HeaderNavbar hideSidebar={props.hideSidebar} />
-      <Profile />
-      <Navbar />
-      <Favorites />
-      <Favorites />
-      <Favorites />
+      <div className={theme.themes}>
+        <HeaderNavbar hideSidebar={props.hideSidebar} />
+        <Profile />
+        <Navbar />
+        <Favorites />
+        <Favorites />
+        <Favorites />  
+      </div>
     </div>
   )
 }

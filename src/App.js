@@ -5,7 +5,7 @@ import Content from './components/Content/Content'
 import Feed from './components/Feed/Feed'
 import { connect } from 'react-redux'
 import { initializeApp } from './redux/appReducer'
-import { BrowserRouter, HashRouter, withRouter } from 'react-router-dom'
+import { BrowserRouter, withRouter } from 'react-router-dom'
 import { compose } from 'redux'
 import Preloader from './components/Common/Preloader/Preloader'
 import store from './redux/reduxStore'
@@ -17,11 +17,11 @@ class App extends React.Component {
   }
 
   render() {
-    if (!this.props.initialized) {
-      return <Preloader />
-    }
+    // if (!this.props.initialized) {
+    //   return <Preloader />
+    // }
     return (
-      <div className="appWrapper">
+      <div>
         <SidebarContainer />
         <Content />
         <Feed />

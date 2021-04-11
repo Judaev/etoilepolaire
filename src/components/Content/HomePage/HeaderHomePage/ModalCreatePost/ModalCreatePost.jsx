@@ -12,9 +12,9 @@ const ModalCreatePost = (props) => {
       </div>
       
       <div>
-        <div className={style.heading}>
+        {/* <div className={style.heading}>
           <input  placeholder='Заголовок' type="text"/>
-        </div>
+        </div> */}
         <div>
           <textarea className={style.text} placeholder='Введите текст...' name="" id="" cols="30" rows="10"></textarea>
         </div>

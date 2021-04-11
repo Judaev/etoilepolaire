@@ -4,10 +4,6 @@ import './index.css'
 import EtoileApp from './App'
 import reportWebVitals from './reportWebVitals'
 
-import { BrowserRouter } from 'react-router-dom'
-import store from './redux/reduxStore'
-import { Provider } from 'react-redux'
-
 ReactDOM.render(
   <React.StrictMode>
     <EtoileApp />

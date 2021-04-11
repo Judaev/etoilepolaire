@@ -8,12 +8,12 @@ const instance = axios.create({
   },
 })
 
-const news = axios.create({
-  withCredentials: true,
-  headers: {
-    'API-KEY': '5792621ee47f4d679b54fa8cef10ad46'
-  }
-})
+// const news = axios.create({
+//   withCredentials: true,
+//   headers: {
+//     'API-KEY': '5792621ee47f4d679b54fa8cef10ad46'
+//   }
+// })
 
 export const usersAPI = {
   getUsers(currentPage = 1, pageSize = 5) {
@@ -42,7 +42,16 @@ export const profileAPI = {
   },
   updateStatus(status) {
     return instance.put(`profile/status/`, { status: status })
-  }
+  },
+  savePhoto(photoFile) {
+    let formData = new FormData()
+    formData.append('image', photoFile)
+    return instance.put(`profile/photo`, formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    })
+  },
 }
 
 // export const newsAPI = {
@@ -54,17 +63,14 @@ export const profileAPI = {
 
 export const authAPI = {
   me() {
-    return instance.get(
-      `auth/me`,
-      {
-        withCredentials: true,
-      }
-    )
+    return instance.get(`auth/me`, {
+      withCredentials: true,
+    })
   },
   login(email, password, rememberMe = false) {
-    return instance.post(`auth/login`, {email, password, rememberMe})
+    return instance.post(`auth/login`, { email, password, rememberMe })
   },
   logout() {
     return instance.delete(`auth/login`)
-  }
+  },
 }

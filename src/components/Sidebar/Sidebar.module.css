@@ -8,8 +8,8 @@
   overflow-x: auto;
 
   /* border: 1px solid black; */
-
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  /* background-color: #1F2023; Темная тема */
 }
 
 .sidebar::-webkit-scrollbar {
