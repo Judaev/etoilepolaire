@@ -1,2 +1,0 @@
-(this.webpackJsonpetoilepolaire=this.webpackJsonpetoilepolaire||[]).push([[4],{333:function(e,t,i){e.exports={title:"MusicPage_title__3s74e"}},334:function(e,t,i){"use strict";i.r(t);var s=i(0),c=(i(1),i(333)),n=i.n(c);t.default=function(e){return Object(s.jsx)("div",{children:Object(s.jsx)("div",{className:n.a.title,children:"Music Page"})})}}}]);
-//# sourceMappingURL=4.225db52c.chunk.js.map
