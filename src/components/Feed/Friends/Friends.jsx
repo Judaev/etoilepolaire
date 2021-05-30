@@ -2,10 +2,11 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import style from './Friends.module.css'
 import FriendsItem from './FriendsItem/FriendsItem'
+import { SFriendsContainer } from './friends.styled'
 
 const Friends = () => {
   return (
-    <div className={style.main}>
+    <SFriendsContainer>
       <NavLink to='/friends' className={style.title}>
         Friends
       </NavLink>
@@ -21,7 +22,7 @@ const Friends = () => {
         <FriendsItem />
         <FriendsItem />
       </div>
-    </div>
+    </SFriendsContainer>
   )
 }
 

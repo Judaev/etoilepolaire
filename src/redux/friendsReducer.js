@@ -1,4 +1,4 @@
-import { usersAPI } from '../api/api'
+import { usersAPI } from '../Common/api/api'
 import { updateObjectInArray } from '../utils/helper'
 
 const FOLLOW = 'FOLLOW'

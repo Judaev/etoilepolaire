@@ -9,7 +9,7 @@ import {
 } from '../../../redux/friendsReducer'
 import FriendsPage from './FriendsPage'
 import Preloader from '../../Common/Preloader/Preloader'
-import { usersAPI } from '../../../api/api'
+import { usersAPI } from '../../../Common/api/api'
 import withAuthRedirect from '../../../hoc/withAuthRedirect'
 import { compose } from 'redux'
 import {

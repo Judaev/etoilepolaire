@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.css'
 import SidebarContainer from './components/Sidebar/Sidebar'
 import Content from './components/Content/Content'
 import Feed from './components/Feed/Feed'
@@ -10,6 +9,7 @@ import { compose } from 'redux'
 import Preloader from './components/Common/Preloader/Preloader'
 import store from './redux/reduxStore'
 import { Provider } from 'react-redux';
+import Header from './Common/components/header/header.component.jsx'
 
 class App extends React.Component {
   componentDidMount() {
@@ -22,9 +22,12 @@ class App extends React.Component {
     // }
     return (
       <div>
+        <Header />
+        <div>
         <SidebarContainer />
         <Content />
         <Feed />
+        </div>
       </div>
     )
   }

@@ -1,23 +1,17 @@
 import React from 'react'
-import style from './Feed.module.css'
+import { SFeedContainer } from './feed.styled'
 import Friends from './Friends/Friends'
 import Interesting from './Interesting/Interesting'
 import Notification from './Notification/Notification'
-import theme from '../../Theme.module.css'
 
 const Feed = () => {
   return (
-    <div className={style.feed}>
-      <div className={theme.themes}>
-        <Interesting />
-        <Friends />
-        <Notification />  
-      </div>
-    </div>
+    <SFeedContainer>
+      <Interesting />
+      <Friends />
+      <Notification />
+    </SFeedContainer>
   )
 }
 
 export default Feed
-
-
-{/* Music Player */}

@@ -1,6 +1,5 @@
 import React, { Suspense } from 'react'
 import { Route } from 'react-router-dom'
-import theme from '../../Theme.module.css'
 import style from './Content.module.css'
 import FriendsPageContainer from './FriendsPage/FriendsPageContainer'
 import HomePage from './HomePage/HomePage'
@@ -20,7 +19,6 @@ const MusicPage = React.lazy(() => import('./MusicPage/MusicPage'))
 const Content = () => {
   return (
     <div className={style.content}>
-      <div className={theme.themes}>
         <div className={style.container}>
           <Route path="/etoilepolaire" render={() => <Main />} />
           <Route path="/home" render={() => <HomePage />} />
@@ -35,7 +33,7 @@ const Content = () => {
           <Route path="/friends" render={() => <FriendsPageContainer />} />
           <Route path="/login" render={() => <LoginPage />} />
         </div>
-      </div>
+     
     </div>
   )
 }

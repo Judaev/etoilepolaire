@@ -1,11 +1,8 @@
 import React from 'react'
+import SidebarProfile from '../../Common/components/sidebarProfile/sidebarProfile.component'
 import Favorites from './Favorites/Favorites'
-import HeaderNavbar from './HeaderNavbar/HeaderNavbar'
-import LoginBlockContainer from './LoginBlock/LoginBlockContainer'
 import Navbar from './Navbar/Navbar'
-import Profile from './Profile/Profile'
-import style from './Sidebar.module.css'
-import theme from '../../Theme.module.css'
+import { SSidebarContainer } from './Sidebar.styled'
 
 class SidebarContainer extends React.Component {
   state = {
@@ -22,24 +19,18 @@ class SidebarContainer extends React.Component {
     return (
       <>
         { this.state.sidebar && <Sidebar hideSidebar={this.hideSidebar} /> } 
-      </>
-      
+      </> 
     )
   }
 }
 
 const Sidebar = (props) => {
   return (
-    <div className={style.sidebar}>
-      <div className={theme.themes}>
-        <HeaderNavbar hideSidebar={props.hideSidebar} />
-        <Profile />
+    <SSidebarContainer>
+        <SidebarProfile />
         <Navbar />
-        <Favorites />
-        <Favorites />
         <Favorites />  
-      </div>
-    </div>
+    </SSidebarContainer>
   )
 }
 

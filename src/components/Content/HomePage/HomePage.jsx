@@ -7,8 +7,8 @@ import NewsContainer from './News/NewsContainer'
 const HomePage = (props) => {
   return (
     <div className={style.main}>
-      <HeaderHomePageContainer />
-      <Dashboard />
+      {/* <HeaderHomePageContainer /> */}
+      {/* <Dashboard /> */}
       <NewsContainer />
     </div>
   )

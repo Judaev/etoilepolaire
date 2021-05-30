@@ -1,10 +1,11 @@
 import React from 'react'
+import { STitle } from './SafetyBlock.styled'
 
  const SafetyBlock = () => {
   return (
-    <div>
+    <STitle>
       Безопасность
-    </div>
+    </STitle>
   )
 }
 
