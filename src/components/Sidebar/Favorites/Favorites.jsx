@@ -1,17 +1,17 @@
 import React from 'react'
-import style from './Favorites.module.css'
-import FavoritesItem from './FavoritesItem/FavoritesItem'
+import Card from '../../../Common/components/card/card.component'
+import { SFavoritesContainer, SFavoritesTitle } from './favorites.styled'
 
 const Favorites = () => {
   return (
-    <div className={style.main}>
-      <div className={style.title}>Favorites</div>
-      <div className={style.items}>
-        <FavoritesItem />
-        <FavoritesItem />
-        <FavoritesItem />
-      </div>
-    </div>
+    <SFavoritesContainer>
+      <SFavoritesTitle>
+        Invitations
+      </SFavoritesTitle>
+      <Card />
+      <Card />
+      <Card />
+    </SFavoritesContainer>
   )
 }
 

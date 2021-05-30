@@ -4,8 +4,10 @@ export const SFeedContainer = styled.div`
   position: fixed;
   right: 0;
 
+  padding: 20px 20px;
+
   width: 300px;
-  height: 100%;
+  height: 100vh;
 
   overflow-x: auto;
 

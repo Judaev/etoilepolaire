@@ -7,9 +7,9 @@ import Notification from './Notification/Notification'
 const Feed = () => {
   return (
     <SFeedContainer>
-      <Interesting />
+      {/* <Interesting /> */}
       <Friends />
-      <Notification />
+      {/* <Notification /> */}
     </SFeedContainer>
   )
 }

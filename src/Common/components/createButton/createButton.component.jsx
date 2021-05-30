@@ -5,11 +5,11 @@ import { SCreateButtonContainer, SCreateButtonPlusIcon, SCreateButtonTitle } fro
 const CreateButton = ({modal, setModal}) => {
   return (
     <>
-    <SCreateButtonContainer>
+    <SCreateButtonContainer  onClick={() => setModal(!modal)}>
       <SCreateButtonPlusIcon>
         <PlusIcon width='12px' height='12px' />
       </SCreateButtonPlusIcon>
-      <SCreateButtonTitle onClick={() => setModal(!modal)}>
+      <SCreateButtonTitle>
         Create
       </SCreateButtonTitle>
     </SCreateButtonContainer>

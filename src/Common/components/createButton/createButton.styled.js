@@ -6,9 +6,8 @@ export const SCreateButtonContainer = styled.div`
   align-items: center;
 
   margin: 0 10px;
-  padding: 8px 15px;
+  padding: 7px 15px;
 
-  width: 100px;
   background-color: ${MAIN_COLOR};
 
   border-radius: 12px;

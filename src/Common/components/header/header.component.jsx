@@ -13,7 +13,7 @@ const Header= () => {
       <div style={{display: 'flex', alignItems: 'center'}}>
         <SearchInput />
         <CreateButton modal={modal} setModal={setModal} />
-        <img src='https://sun9-63.userapi.com/impf/c850124/v850124719/12fe02/sT0rGwjNMDA.jpg?size=549x578&quality=96&proxy=1&sign=639326bacd45c5544eacd733aecf8aa6' style={{width: '40px', height: '40px', borderRadius: '12px'}} />
+        <img src='https://sun9-63.userapi.com/impf/c850124/v850124719/12fe02/sT0rGwjNMDA.jpg?size=549x578&quality=96&proxy=1&sign=639326bacd45c5544eacd733aecf8aa6' style={{width: '40px', height: '40px', borderRadius: '10px'}} />
       </div>
     </SHeaderContainer>
   )

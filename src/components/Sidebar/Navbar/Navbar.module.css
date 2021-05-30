@@ -36,6 +36,6 @@
 
 .activeText {
   font-weight: 700;
-
+  color: #337aff;
   transition: font-weight 0.1s linear;
 }

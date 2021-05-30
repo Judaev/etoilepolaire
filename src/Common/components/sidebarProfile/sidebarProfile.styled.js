@@ -12,13 +12,22 @@ export const SContainer = styled.div`
 
 export const SProfileContainer = styled.div`
   display: flex;
+  align-items: center;
 
   padding: 10px 20px;
+
+  max-width: 100%;
 
   cursor: pointer;
 `
 
-export const SProfileUserName = styled.span`
+export const SProfileUserNameContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`
+
+export const SProfileUserName = styled.div`
   font-size: 18px;
   font-weight: 700;
   color: #000;

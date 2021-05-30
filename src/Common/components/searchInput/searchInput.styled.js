@@ -4,20 +4,26 @@ export const SSearchInputContainer = styled.div`
   display: flex;
   align-items: center;
 
+  margin-right: 10px;
   padding: 8px 15px;
 
-  width: 300px;
-  background-color: #e7e7e7;
+  width: 350px;
+  background-color: #f5f5f5;
 
   border-radius: 12px;
 `
 
 export const SSearchIconContainer = styled.div`
-  margin-right: 10px;
+  margin-right: 15px;
 `
 
-export const SSearchInputTitle = styled.span`
+export const SSearchInput = styled.input`
+  background-color: #f5f5f5;
+
   font-size: 18px;
-  color: #838383;
+  color: #9C9C9C;
   font-weight: 600;
+
+  border: none;
+  outline: none;
 `

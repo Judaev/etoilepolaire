@@ -4,12 +4,13 @@ export const SSidebarContainer = styled.div`
   position: fixed;
   left: 0;
 
+  margin-bottom: 30px;
   padding: 20px 20px;
   
   width: 250px;
-  height: 100%;
+  height: 100vh;
 
-  overflow-x: auto;
+  overflow: auto;
 
   ::-webkit-scrollbar {
   width: 0;

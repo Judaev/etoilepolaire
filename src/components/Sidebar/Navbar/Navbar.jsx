@@ -1,14 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import style from './Navbar.module.css'
-import { SNavbarContainer, SNavbarItem } from './navbar.styled'
+import { SNavbarContainer, SNavbarItem, SNavbarItemTitle } from './navbar.styled'
 
 const Navbar = () => {
   return (
     <SNavbarContainer>
       <SNavbarItem>
-        <img src="https://www.flaticon.com/svg/static/icons/svg/1946/1946488.svg" activeClassName={style.active} className={style.  photo}/>
-        <NavLink to='/home' className={style.navlink} activeClassName={style.activeText} >Home</NavLink>
+        <img src="https://www.flaticon.com/svg/static/icons/svg/1946/1946488.svg" className={style.photo}/>
+        <NavLink to='/home' className={style.navlink} activeClassName={style.activeText}>Home</NavLink>
       </SNavbarItem>
       <SNavbarItem>
         <img src="https://www.flaticon.com/svg/static/icons/svg/860/860784.svg" className={style.photo}/>

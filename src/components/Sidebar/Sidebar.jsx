@@ -1,5 +1,6 @@
 import React from 'react'
 import SidebarProfile from '../../Common/components/sidebarProfile/sidebarProfile.component'
+import { Spacer } from '../../Common/components/spacer/spacer.component'
 import Favorites from './Favorites/Favorites'
 import Navbar from './Navbar/Navbar'
 import { SSidebarContainer } from './Sidebar.styled'
@@ -29,7 +30,8 @@ const Sidebar = (props) => {
     <SSidebarContainer>
         <SidebarProfile />
         <Navbar />
-        <Favorites />  
+        <Favorites /> 
+        <Spacer value='120px' />
     </SSidebarContainer>
   )
 }

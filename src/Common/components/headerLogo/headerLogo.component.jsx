@@ -5,7 +5,7 @@ import { SHeaderLogoContainer, SHeaderLogoTitle } from './headerLogo.styled'
 const HeaderLogo = () => {
   return (
     <SHeaderLogoContainer>
-      {/* <LogoIcon /> */}
+      <LogoIcon />
       <SHeaderLogoTitle>
         Étoile Polaire
       </SHeaderLogoTitle>

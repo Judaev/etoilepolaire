@@ -1,16 +1,14 @@
 import React from 'react'
 import SearchIcon from '../icons/searchIcon.component'
-import { SSearchIconContainer, SSearchInputContainer, SSearchInputTitle } from './searchInput.styled'
+import { SSearchIconContainer, SSearchInput, SSearchInputContainer } from './searchInput.styled'
 
 const SearchInput = () => {
   return (
     <SSearchInputContainer>
       <SSearchIconContainer>
-        <SearchIcon opacity='0.5' />
+        <SearchIcon opacity='0.3' />
       </SSearchIconContainer>
-      <SSearchInputTitle>
-        Search
-      </SSearchInputTitle>
+      <SSearchInput placeholder="Search" type="text" />
     </SSearchInputContainer>
   )
 }
